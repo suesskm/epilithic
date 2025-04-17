@@ -2,3 +2,58 @@
     margin: 0;
     padding: 0;
 }
+
+a{
+    text-decoration: none;
+    color: inherit;
+    font-family: ellograph-cf, monospace;
+}
+
+a:hover {
+
+    text-shadow: 0 0 12px #EEC35D, 0 0 20px #EEC35D;
+}
+    
+
+.flex-container-main {
+    display: flex;
+    justify-content: center;
+    flex-direction: row; /* Change from column to row */
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%; /* Ensure the parent container is wide enough */
+    height: auto; 
+    justify-content: space-around; /* Corrected from spacearound */
+    flex-wrap: wrap; /* Corrected from flex: wrap */
+}
+
+
+.header{
+    display: flex;
+    flex-direction: column;
+    width: 20%; /* Adjust the width as needed */
+    height: auto;
+    flex-wrap: wrap;
+    margin-left: 0;
+    font-family: ellograph-cf, monospace;
+    font-style: normal;
+    font-weight: 100;
+    padding: 10px;
+  
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: column;
+    width: 75%; /* Adjust the width as needed */
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+#image{
+    width: 90%;
+
+}
