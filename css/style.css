@@ -1,3 +1,8 @@
+
+
+
+
+
 *{
     margin: 0;
     padding: 0;
@@ -15,45 +20,116 @@ a:hover {
 }
     
 
+
+body{
+background-image: no-repeat;
+background-size: cover;
+}
+
 .flex-container-main {
     display: flex;
     justify-content: center;
-    flex-direction: row; /* Change from column to row */
+    flex-direction: column; /* Change from column to row */
     margin-left: auto;
     margin-right: auto;
     width: 100%; /* Ensure the parent container is wide enough */
     height: auto; 
     justify-content: space-around; /* Corrected from spacearound */
     flex-wrap: wrap; /* Corrected from flex: wrap */
+  
 }
 
 
 .header{
     display: flex;
     flex-direction: column;
-    width: 20%; /* Adjust the width as needed */
-    height: auto;
+    width: 10%; /* Adjust the width as needed */
+    height: 88vh;
     flex-wrap: wrap;
     margin-left: 0;
     font-family: ellograph-cf, monospace;
     font-style: normal;
     font-weight: 100;
     padding: 10px;
+    margin-top: 10px;
+
+
+}
+
+.top-header-container{
+
+    display: flex;
+    flex-direction: row;
+    width: 100%; /* Adjust the width as needed */
+    height: 50px; /* Adjust the height as needed */
+
+   
+}
+
+.header-row{
+    width: 80%;
+    height: 50px; /* Adjust the height as needed */
+    padding: 5px;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    display: flex;
+    flex-direction: row;
   
+}
+
+.header-row-email{
+    width: 20%;
+    height: 50px; /* Adjust the height as needed */
+    padding: 5px;
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    display: flex;
+    flex-direction: row;
+   
 }
 
 .flex-container{
     display: flex;
     flex-direction: column;
-    width: 75%; /* Adjust the width as needed */
+    width: 90%; /* Adjust the width as needed */
     height: auto;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+  
+   
    
 }
 
-#image{
-    width: 90%;
+#home-image{
+    display: block;
+    margin: auto;
+    width: 50%;
+    
 
+}
+
+#image:hover{
+    transform: scale(1.1);
+    transition: transform 0.5s ease;
+    filter: brightness(1.2);
+}
+
+#gif{
+    position: absolute;
+    top: 10;
+    left: 0;
+   
+}
+
+#secondaylogo{
+    display: block;
+    margin: auto;
+    width: 20%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  
 }
